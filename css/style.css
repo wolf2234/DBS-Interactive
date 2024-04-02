@@ -1,5 +1,85 @@
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('../fonts/NunitoSans/NunitoSans_7pt-Light.woff2') format('woff2'),
+        url('../fonts/NunitoSans/NunitoSans_7pt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NunitoSans'; 
+    src: url('../fonts/NunitoSans/NunitoSans_10pt-Black.woff2') format('woff2'),
+        url('../fonts/NunitoSans/NunitoSans_10pt-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('../fonts/NunitoSans/NunitoSans_7pt-Black.woff2') format('woff2'),
+        url('../fonts/NunitoSans/NunitoSans_7pt-Black.woff') format('woff');
+    font-weight: 900; 
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('../fonts/NunitoSans/NunitoSans_10pt-Light.woff2') format('woff2'),
+        url('../fonts/NunitoSans/NunitoSans_10pt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('../fonts/NunitoSans/NunitoSans_7pt-Bold.woff2') format('woff2'),
+        url('../fonts/NunitoSans/NunitoSans_7pt-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('../fonts/NunitoSans/NunitoSans_10pt-Bold.woff2') format('woff2'),
+        url('../fonts/NunitoSans/NunitoSans_10pt-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'NunitoSans'; 
+    src: url('../fonts/NunitoSans/NunitoSans_10pt-Regular.woff2') format('woff2'),
+        url('../fonts/NunitoSans/NunitoSans_10pt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('../fonts/NunitoSans/NunitoSans_7pt-Regular.woff2') format('woff2'),
+        url('../fonts/NunitoSans/NunitoSans_7pt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+body {
+    font-family: 'NunitoSans', sans-serif;
+}
+
 .bk-container {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -16,90 +96,133 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .header__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 500px;
+    flex-basis: 600px;
 }
 
 .header__menu li {
     text-decoration: none;
     list-style: none;
+    height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .header__sublinks {
     position: relative;
+    padding: 50px 0px;
 }
+
 
 .header__submenu {
     display: none;
     position: absolute;
+    top: 87%;
     background-color: #7acbc6;
+    width: 335px;
+    padding: 0px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+    z-index: 2;
+}
+
+.header__sublinks:hover .header__submenu{
+    display: block;
+}
+
+.header__submenu_position-one {
+    left: -180%;
+}
+
+.header__submenu_position-two {
+    left: -140%;
+}
+
+.header__submenu_position-three {
+    left: -160%;
+}
+
+.header__submenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 9px solid #7acbc6;
 }
 
 .header__sublinks:hover .header__submenu {
     display: block;
+    transition: all 0.25s ease-in-out;
 }
 
-
-.header__subitem {
-    padding: 10px;
-    border-top: 1px solid rgba(5, 12, 26, .2);
-    border-bottom: 1px solid rgba(5, 12, 26, .2);
+.header__link:hover {
+    transition: all 0.25s ease-in-out;
+    color: #7acbc6;
 }
+
 
 .header__sublink {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
     text-decoration: none;
     color: #000;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
 }
 
+.header__sublink::after {
+    content: '';
+    display: inline-block;
+    background-color: transparent;
+    background-image: url('../img/main/sidebar/arrow-right.svg');
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 10px;
+    padding: 0;
+    vertical-align: middle;
+}
+.header__sublink:hover::after {
+    content: '';
+    display: inline-block;
+    background-color: transparent;
+    background-image: url('../img/main/sidebar/arrow-right.svg');
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 10px;
+    margin: 0px -10px 0px 25px;
+    transition: all 0.28s;
+    padding: 0;
+    vertical-align: middle;
+}
 
+.header__subitem {
+    border-bottom: 1px solid rgba(5, 12, 26, .2);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.header__subitem:last-child {
+    border-bottom: 0px solid rgba(5, 12, 26, .2);
+}
 
 
 .header__link {
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     letter-spacing: 1px;
-    position: relative;
-    z-index: 5;
+    display: inline-block;
 }
 
 .header__button {
@@ -110,18 +233,13 @@
     padding: 36px 38px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .header__button:hover {
-    display: block;
     color: #7acbc6;
     background-color: #050c1a;
     border: 1px solid #7acbc6;
-    padding: 36px 38px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 .sub-header {
@@ -139,20 +257,20 @@
 }
 
 .sub-header__title {
-    flex-basis: 40%;
+    flex-basis: 60%;
     margin-bottom: 40px;
 }
 
 .sub-header__title h1{
-    font-size: 40px;
+    font-size: 55px;
     font-weight: 300;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 
 .sub-header__links {
     display: flex;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -195,7 +313,7 @@
 }
 
 .main-text {
-    width: 720px;
+    width: 800px;
     font-size: 20px;
     counter-reset: item;
 }
@@ -276,8 +394,9 @@
 
 .sidebar__title {
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 1px;
+    font-weight: 700;
     width: 250px;
     height: 45px;
     border-bottom: 4px solid #7acbc6;
@@ -340,8 +459,8 @@
     padding: 20px 8px 20px 38px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-weight: 700;
-    width: 300px;
+    font-weight: 900;
+    width: 310px;
     margin-bottom: -48px;
 }
 /* .sidebar__button a {
@@ -360,11 +479,12 @@
     margin: 0 0 0 10px;
     padding: 0;
     vertical-align: middle;
+    transition: all 0.28s;
 }
 
 
 .sidebar__button:hover {
-    transition: all 0.25s;
+    transition: all 0.28s;
     color: #7acbc6;
     background-color: #050c1a;
     border: 1px solid #7acbc6;
@@ -426,7 +546,8 @@
 .main-text__button {
     padding: 8px 0px 8px 20px;
     font-size: 13px;
-    width: 240px;
+    font-weight: 900;
+    width: 280px;
     background-color: #050c1a;
     text-transform: uppercase;
     text-decoration: none;
@@ -480,7 +601,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 700;
-    width: 42%;
+    width: 38%;
     margin-bottom: -50px;
 }
 
@@ -493,8 +614,7 @@
     background-size: cover;
     width: 30px;
     height: 30px;
-    margin: 0 0 0 7px;
-    padding: 0;
+    margin: 0 0 0 10px;
     vertical-align: middle;
 }
 
@@ -570,7 +690,7 @@
 }
 
 .footer__text {
-    flex-basis: 170px;
+    flex-basis: 230px;
     color: #fff;
     font-size: 18px;
     font-weight: 400;
@@ -609,12 +729,13 @@
     vertical-align: middle;
     border: 1px solid #7acbc6;
     margin-left: 20px;
+    transition: all 0.28s;
 }
 
 .footer__button:hover::after {
     margin-left: 25px;
     margin-right: -5px;
-    transition: all 0.25s;
+    transition: all 0.28s;
 }
 
 .footer__contacts {
@@ -629,7 +750,7 @@
 
 .footer__call-us {
     border-right: 1px solid #abb8c3;
-    width: 330px;
+    width: 45%;
 }
 
 .footer__request-button {
@@ -656,6 +777,7 @@
     vertical-align: middle;
     background-color: #7acbc6;
     margin-left: 20px;
+    transition: all 0.28s;
 }
 
 .footer__request-button:hover::after {
@@ -703,6 +825,7 @@
     text-decoration: none;
     color: #7acbc6;
 }
+
 .footer__link::after {
     content: '';
     display: block;
@@ -725,13 +848,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 80px;
+    margin-left: 130px;
 }
 
 .footer__link_size {
     font-size: 18px;
     font-weight: 700;
-    width: 100%;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -739,7 +861,6 @@
 .footer__link_size::after {
     content: '';
     background-color: transparent;
-    width: 100%;
 }
 
 .footer__link_size:hover::after {
@@ -755,7 +876,7 @@
 .footer__menu {
     display: flex;
     padding: 20px 0px;
-    width: 105%;
+    width: 96%;
     border-bottom: 0.2px solid #abb8c3;
 }
 
