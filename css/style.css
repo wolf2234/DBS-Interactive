@@ -268,16 +268,49 @@ body {
 }
 
 .sub-header__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 110px;
+    padding-right: 160px;
+    height: 100%;
+}
+
+.sub-header__item:first-child {
     padding-right: 160px;
 }
-.sub-header__item:first-child {
-    padding-right: 0;
-}
+
 .sub-header__item:last-child {
-    padding-right: 135px;
-    display: flex;
+    flex-direction: row;
     align-items: flex-end;
+    padding-right: 135px;
 }
+
+.breadcrumb {
+    display: flex;
+}
+
+.breadcrumb__item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb__item::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background-color: #000;
+    margin: 0px 10px;
+    transform: rotate(10deg);
+}
+
+.breadcrumb__item:last-child:after {
+    content: "";
+    display: inline-block;
+    background-color: transparent;
+}
+
 
 .heading {
     flex-basis: 60%;
@@ -471,22 +504,27 @@ body {
     margin-bottom: 35px;
 }
 
-.contact-us__button {
+
+.button {
     display: block;
     cursor: pointer;
     text-decoration: none;
-    color: #000;
-    background-color: #7acbc6;
-    border: 1px solid #7acbc6;
-    padding: 20px 8px 20px 38px;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 900;
     width: 310px;
+}
+
+
+.contact-us__button {
+    color: #000;
+    background-color: #7acbc6;
+    border: 1px solid #7acbc6;
+    padding: 20px 8px 20px 38px;
     margin-bottom: -48px;
 }
 
-.contact-us__button::after {
+.button::after {
     content: "";
     display: inline-block;
     background-image: url('../img/main/sidebar/arrow-right.svg');
@@ -495,7 +533,6 @@ body {
     width: 30px;
     height: 30px;
     margin: 0 0 0 10px;
-    padding: 0;
     vertical-align: middle;
     transition: all 0.28s;
 }
@@ -574,25 +611,15 @@ body {
 .drive__button {
     padding: 8px 0px 8px 20px;
     font-size: 13px;
-    font-weight: 900;
     width: 260px;
     background-color: #050c1a;
-    text-transform: uppercase;
-    text-decoration: none;
     letter-spacing: 2px;
     color: #fff;
     margin-right: -100px;
 }
+
 .drive__button::after {
-    display: inline-block;
-    content: '';
     background-image: url('../img/main/sidebar/arrow-right_blue.svg');
-    background-position: center;
-    background-size: cover;
-    margin-left: 6px;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
 }
 
 .subscribe {
@@ -616,35 +643,20 @@ body {
 }
 
 .subscribe__button {
-    display: block;
-    cursor: pointer;
-    text-decoration: none;
     font-size: 17px;
     color: #fff;
     background-color: #000;
     border: 1px solid #000;
     padding: 20px 10px 20px 40px;
     letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 700;
-    width: 40%;
     margin-bottom: -50px;
 }
 
 .subscribe__button::after {
-    content: "";
-    display: inline-block;
     background-image: url('../img/main/sidebar/arrow-right_blue.svg');
-    background-position: center;
-    background-size: cover;
-    width: 30px;
-    height: 30px;
-    margin: 0 0 0 10px;
-    vertical-align: middle;
 }
 
 .subscribe__button:hover {
-    transition: all 0.25s;
     color: #000;
     background-color: #fff;
 }
