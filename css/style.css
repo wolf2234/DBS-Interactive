@@ -1576,5 +1576,24 @@ body {
         text-decoration: none;
         color: #1869b9;
     }
+    .content__items {
+        flex-direction: column;
+    }
+    .content__body {
+        width: 60%;
+        font-size: 18px;
+    }
+    .content__title {
+        font-size: 25px;
+    }
+    .content__title_minsize {
+        font-size: 22px;
+    }
+    .content__title_numbers {
+        font-size: 25px;
+    }
+    .content__title-img {
+        width: 100%;
+    }
 }
 
