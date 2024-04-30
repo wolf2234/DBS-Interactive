@@ -116,7 +116,7 @@ body {
     border: 2px solid red;
 }
 
-.header__margin-right {
+.header__margin {
     margin-right: 110px;
 }
 
@@ -356,13 +356,11 @@ body {
 }
 
 .breadcrumb {
-    display: flex;
-    padding: 10px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
 }
 
 .breadcrumb__item {
-    display: flex;
-    align-items: center;
+    vertical-align: middle;
 }
 
 .breadcrumb__item::after {
@@ -372,6 +370,7 @@ body {
     height: 15px;
     background-color: #000;
     margin: 0px 10px;
+    vertical-align: middle;
     transform: rotate(10deg);
 }
 
@@ -1412,10 +1411,16 @@ body {
     .header__margin-right {
         margin-right: 0px;
     }
+    .header__margin {
+        margin-bottom: 20px;
+    }
     .hamburger {
         display: flex;
     }
-    .color-block {
+    .sub-header__item:last-child,
+    .color-block,
+    .color-block__img,
+    .gears {
         display: none;
     }
     .contact-button {
@@ -1430,11 +1435,12 @@ body {
         color: #000;
     }
     .menu {
+        display: none;
         position: absolute;
         width: 100%;
         background-color: #7acbc6;
         flex-direction: column;
-        top: 7.5%;
+        top: 7.8%;
         right: -100%;
         justify-content: flex-start;
         transition: .3s ease;
@@ -1481,6 +1487,7 @@ body {
     }
 
     .menu.active{
+        display: block;
         right: 0;
         padding: 0;
     }
@@ -1529,18 +1536,45 @@ body {
         padding: 0;
         vertical-align: middle;
     }
-    .sub-header__items {
+
+    .sub-header__item {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        padding-right: 0px;
+        gap: 0;
     }
     .breadcrumb {
-        display: inline-flex;
-        width: 100%;
+        display: block;
     }
-    .breadcrumb__item {
-        display: inline;
+    
+    .heading {
+        padding-bottom: 10px;
     }
-    .breadcrumb__item:last-child {
-        flex-wrap: wrap;
+    .sub-header__items {
+        height: 300px;
+        width: 150%;
+    }
+
+    .title-big {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 50px;
+    }
+
+
+    .nav-links {
+        display: flex;;
+        font-size: 15px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 25px;
+    }
+
+    .nav-links__link {
+        text-decoration: none;
+        color: #1869b9;
     }
 }
 
