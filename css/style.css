@@ -1434,7 +1434,7 @@ body {
         width: 100%;
         background-color: #7acbc6;
         flex-direction: column;
-        top: 7.2%;
+        top: 7.5%;
         right: -100%;
         justify-content: flex-start;
         transition: .3s ease;
@@ -1517,7 +1517,6 @@ body {
         margin-left: 5px;
         vertical-align: middle;
     }
-    
     .dropdown__link:hover::after {
         content: '';
         display: inline-block;
@@ -1529,6 +1528,19 @@ body {
         transition: all 0.28s;
         padding: 0;
         vertical-align: middle;
+    }
+    .sub-header__items {
+        flex-direction: column;
+    }
+    .breadcrumb {
+        display: inline-flex;
+        width: 100%;
+    }
+    .breadcrumb__item {
+        display: inline;
+    }
+    .breadcrumb__item:last-child {
+        flex-wrap: wrap;
     }
 }
 
