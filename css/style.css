@@ -1873,7 +1873,7 @@ body {
     .car__container,
     .articles__container {
         width: 100%;
-        padding: 0px 20px;
+        padding: 0px 0px 0px 10px;
     }
     .header {
         height: 50px;
@@ -2057,7 +2057,7 @@ body {
         border-bottom: none;
     }
     .content__body {
-        width: 65%;
+        width: 84%;
         font-size: 16px;
     }
     .content__body p {
@@ -2079,7 +2079,7 @@ body {
         display: flex;
         letter-spacing: 0px;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 900;
         margin-bottom: 35px;
     }
@@ -2103,15 +2103,15 @@ body {
     }
 
     .drive {
-        padding: 13px 0px 0px 13px;
-        width: 400px;
+        padding: 8px 0px 0px 8px;
+        width: 90%;
         align-items: center;
     }
     
     .drive__text {
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 100;
-        height: 0px;
+        height: 8px;
     }
     
     .drive__weight {
@@ -2119,21 +2119,21 @@ body {
     }   
     
     .drive__button {
-        padding: 3px 0px 3px 10px;
-        font-size: 7px;
-        width: 160px;
+        padding: 3px 0px 3px 5px;
+        font-size: 5px;
+        width: 130px;
         background-color: #050c1a;
         letter-spacing: 2px;
         color: #fff;
-        margin-right: -80px;
-        margin-bottom: 14px;
+        margin-right: -20px;
+        margin-bottom: 8px;
     }
     
     .drive__button::after {
         background-image: url('../img/main/sidebar/arrow-right_blue.svg');
         width: 17px;
         height: 17px;
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     .subscribe {
