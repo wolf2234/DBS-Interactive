@@ -3131,7 +3131,7 @@ body {
     }
     
     .articles__item {
-        width: 480px;
+        width: 340px;
         margin-bottom: 20px;
     }
     
@@ -3297,6 +3297,8 @@ body {
     }
     .social__item {
         margin-right: 40px;
+        height: 10px;
+        width: 10px;
     }
     .social__item:first-child {
         margin-left: 0px;
