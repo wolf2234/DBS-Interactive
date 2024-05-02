@@ -234,8 +234,12 @@ body {
         left: 0;
         width: 100%;
         overflow: auto;
+        /*
         height: 100%;
-        padding: 100px 20px 30px 30px;
+        padding: 60px 0px 30px; 
+        */
+        height: auto;
+        padding: 60px 0px 0px;
         background-color: #7acbc6;
         z-index: 0;
         transition: 0.3s ease;
@@ -243,19 +247,36 @@ body {
     .menu__items {
         display: block;
         align-self: flex-start;
+        color: #000;
     }
-    .menu__item, 
+    .menu__item,
     .menu__item:first-child {
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    .menu__item {
+        padding: 20px 30px;
+        border-bottom: 1px solid rgba(5, 12, 26, .2);
+    }
+    .menu__link {
+        color: #000;
+        font-size: 17px;
+        font-weight: 900;
+        letter-spacing: 4px;
+        text-transform: uppercase;
     }
     .menu.active {
         top: 0;
     }
-    .menu__link {
-        font-size: 24px;
+    .menu__button {
+        padding: 3%;
+        width: 100%;
     }
     .contact-btn {
         font-size: 24px;
+        background-color: #050c1a;
+        border: 1px solid #7acbc6;
+        color: #fff;
+        text-align: center;
     }
 }
 
