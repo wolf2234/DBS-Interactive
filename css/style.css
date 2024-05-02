@@ -1909,7 +1909,7 @@ body {
         width: 100%;
         background-color: #7acbc6;
         flex-direction: column;
-        top: 6%;
+        top: 6.5%;
         right: -100%;
         justify-content: flex-start;
         transition: .3s ease;
@@ -2388,7 +2388,7 @@ body {
         width: 100%;
         background-color: #7acbc6;
         flex-direction: column;
-        top: 6.4%;
+        top: 6.5%;
         right: -100%;
         justify-content: flex-start;
         transition: .3s ease;
