@@ -2363,7 +2363,7 @@ body {
     .hamburger {
         display: flex;
         padding: 8% 9% 7.5% 8.3%;
-        height: 10%;
+        height: 12%;
     }
     .sub-header__item:last-child,
     .color-block,
@@ -2388,7 +2388,7 @@ body {
         width: 100%;
         background-color: #7acbc6;
         flex-direction: column;
-        top: 6.4%;
+        top: 6.5%;
         right: -100%;
         justify-content: flex-start;
         transition: .3s ease;
@@ -2533,7 +2533,7 @@ body {
     }
     .content__body {
         font-size: 16px;
-        width: 89%;
+        width: 90%;
     }
     .content__body p {
         margin-bottom: 20px;
