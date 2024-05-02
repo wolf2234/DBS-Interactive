@@ -3296,17 +3296,11 @@ body {
         display: none;
     }
     .social__items {
-        padding: 0px 0px 50px 0px;
+        padding: 0px 0px 30px 0px;
     }
     .social__item {
         margin-right: 40px;
         height: 10px;
         width: 10px;
-    }
-    .social__item:first-child {
-        margin-left: 0px;
-    }
-    .social__item:last-child {
-        margin-right: 0px;
     }
 }
