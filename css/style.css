@@ -1866,7 +1866,7 @@ body {
 
 
 
-@media (max-width: 340.5px) {
+@media (max-width: 320.5px) {
     .header__container,
     .sub-header__container,
     .content__container,
@@ -1887,7 +1887,7 @@ body {
     }
     .hamburger {
         display: flex;
-        padding: 8.3% 9% 8.3% 8.3% ;
+        padding: 8% 9% 10% 8.3%;
         height: 10%;
     }
     .sub-header__item:last-child,
@@ -1913,7 +1913,7 @@ body {
         width: 100%;
         background-color: #7acbc6;
         flex-direction: column;
-        top: 6.4%;
+        top: 6.3%;
         right: -100%;
         justify-content: flex-start;
         transition: .3s ease;
@@ -2057,7 +2057,7 @@ body {
         border-bottom: none;
     }
     .content__body {
-        width: 84%;
+        width: 80%;
         font-size: 16px;
     }
     .content__body p {
@@ -2079,7 +2079,7 @@ body {
         display: flex;
         letter-spacing: 0px;
         text-transform: capitalize;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 900;
         margin-bottom: 35px;
     }
@@ -2121,7 +2121,7 @@ body {
     .drive__button {
         padding: 3px 0px 3px 5px;
         font-size: 5px;
-        width: 130px;
+        width: 140px;
         background-color: #050c1a;
         letter-spacing: 2px;
         color: #fff;
