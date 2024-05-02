@@ -3295,8 +3295,8 @@ body {
     .copyrigh {
         display: none;
     }
-    .social {
-        padding: 0px 0px 30px 0px;
+    .social__items {
+        padding: 0px 0px 50px 0px;
     }
     .social__item {
         margin-right: 40px;
