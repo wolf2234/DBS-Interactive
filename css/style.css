@@ -3156,6 +3156,7 @@ body {
     .footer__info {
         flex-direction: column;
         width: 100%;
+        padding: 0px;
     }
     .insights {
         display: block;
@@ -3294,6 +3295,9 @@ body {
     }
     .copyrigh {
         display: none;
+    }
+    .social {
+        padding: 20px 0px;
     }
     .social__item {
         margin-right: 40px;
