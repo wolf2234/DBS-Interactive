@@ -258,7 +258,7 @@ body {
 
 @media (max-width: 760px) {
     .body.lock {
-        overflow: hidden;
+        overflow: visible;
     }
     .header__container {
         padding-right: 0px;
@@ -375,10 +375,9 @@ body {
         box-shadow: none;
         width: 100%;
     }
-    /* .menu__item:hover .dropdown {
-        display: block;
-    } */
-
+    .dropdown::before {
+        display: none;
+    }
     .menu__select {
         display: flex;
         justify-content: space-between;
