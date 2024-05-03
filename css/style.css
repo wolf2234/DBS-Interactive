@@ -362,9 +362,7 @@ body {
         padding: 3%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        width: 100%;
-        height: 100%;
+        justify-content: flex-start;
     }
     .contact-btn {
         font-size: 24px;
