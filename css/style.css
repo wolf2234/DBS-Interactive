@@ -258,7 +258,7 @@ body {
 
 @media (max-width: 760px) {
     .body.lock {
-        overflow: visible;
+        overflow: hidden;
     }
     .header__container {
         padding-right: 0px;
@@ -319,7 +319,7 @@ body {
         top: -100%;
         left: 0;
         width: 100%;
-        overflow: auto;
+        overflow: scroll;
         /*
         Full of screen for mobile.
         height: 100%;
