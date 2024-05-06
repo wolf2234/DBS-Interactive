@@ -583,8 +583,7 @@ content {
 
 .drive {
     position: relative;
-    display: inline-block;
-    align-items: center;
+    display: flex;
     background-color: #7acbc6;
     color: #000;
     padding: 25px 20px;
@@ -597,7 +596,6 @@ content {
     font-size: 20px;
     font-weight: 100;
     height: 0px;
-    margin-right: 0px;
 }
 
 .drive__weight {
@@ -1512,36 +1510,30 @@ content {
         display: none;
     }
     .drive {
-        position: relative;
-        padding: 0px 0px 0px 10px;
-        height: 45px;
-        width: 230px;
+        height: auto;
+        padding: 10px;
+        width: 80%;
     }
     .drive__text {
         font-size: 9px;
-        position: absolute;
-        top: 10px;
         margin: 0px;
     }
     .drive__button {
         position: absolute;
         font-weight: 700;
-        padding: 0px 0px 27px 12px;
+        padding: 0px 0px 0px 10px;
         font-size: 5px;
         letter-spacing: 1px;
-        margin: 0px;
-        width: 50%;
-        height: 50%;
-        left: 200px;
+        width: 42%;
+        right: -55px;
         top: 10px;
-        z-index: 50;
     }
     .drive__button::after {
         background-image: url('../img/main/sidebar/arrow-right_blue.svg');
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
         background-repeat: no-repeat;
-        margin: 0px 0px 0px 5px;
+        margin: 0px 0px 2px 5px;
     }
     
 }
