@@ -325,6 +325,7 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 4px;
+    z-index: 3;
 }
 
 .nav-links__link {
@@ -364,39 +365,56 @@ body {
     margin-left: 20px;
 }
 
-
-
-
-
-
-
-.content__items {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px 0px 90px 0px;
-    border-bottom: 2px solid #abb8c3;
+content {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
 }
 
 .content__body {
-    width: 800px;
-    font-size: 20px;
-    margin-right: 72px;
+    position: relative;
+    top: 160px;
+    display: flex;
+    justify-content: space-between;
     counter-reset: item;
 }
 
-.content__body p {
+.content__text {
+    position: relative;
+    z-index: 3;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.image {
+    float: right;
+}
+
+
+.content__text p {
     margin-bottom: 30px;
 }
 
-
 .content__image {
-    float: right;
-    margin: 0px 0px 0px 40px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
+.content__title {
+    color: #1869b9;
+    font-size: 35px;
+    margin: 25px 0px;
+    line-height: 40px;
+}
 
-.content__body .content__title_numbers::before {
+.content__title_numbers,
+.content__title_minsize {
+    font-size: 28px;
+}
+
+.content__title_numbers::before {
     display: inline-block;
     content: counter(item) ". ";
     counter-increment: item;
@@ -404,55 +422,36 @@ body {
     margin-right: 10px;
 }
 
-
-.content__title {
-    color: #1869b9;
-    font-size: 40px;
-    margin: 25px 0px;
-}
-
-.content__title_minsize {
-    font-size: 30px;
-}
-
-.content__title_numbers {
-    font-size: 30px;
-}
-
-.content__list {
-    padding-left: 18px;
-    margin-bottom: 30px;
-}
-
 .content__list li {
-    margin-left: 5px;
-    line-height: 25px;
+    display: flex;
+    margin-left: 25px;
+}
+
+.content__list li:not(:last-child) p {
+    margin: 0;
 }
 
 .content__list li::before {
     display: inline-block;
     content: "";
+    border-radius: 50%;
     width: 5px;
     height: 5px;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 10px;
     background-color: #000;
+    padding: 3px;
+    margin: 8px 15px 0px 0px;
+}
+.content__margin {
+    margin: 0px 0px 0px 100px;
 }
 
-.content__title-img {
-    margin-bottom: 25px;
+.services {
+    position: relative;
+    top: 100px;
+    z-index: 3;
+    right: 20px;
+    width: 120%;
 }
-
-
-.sidebar {
-    width: 480px;
-}
-
-.content__sidebar {
-    margin-top: 90px;
-}
-
 
 .title {
     display: inline-block;
@@ -460,27 +459,20 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 700;
-    height: 45px;
+    height: 40px;
     border-bottom: 4px solid #7acbc6;
 }
 
-.sidebar__link {
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.sidebar__list {
+.services__items {
     margin-bottom: 50px;
 }
 
-.sidebar__list li {
+.services__item {
     border-bottom: 1px solid #dbdcde;
     padding: 20px 15px 10px;
 }
 
-.sidebar__list li::before {
+.services__item::before {
     display: inline-block;
     content: "";
     background: url('../img/main/sidebar/seo.svg') center / cover no-repeat;
@@ -490,9 +482,17 @@ body {
     margin-right: 20px;
 }
 
+.services__link {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .contact-us {
     padding: 25px;
     background-color: #162743;
+    height: 195px;
 }
 
 .contact-us__title {
@@ -506,19 +506,22 @@ body {
 
 .contact-us__text {
     color: #fff;
-    font-size: 33px;
+    font-size: 26px;
     margin-bottom: 35px;
 }
 
 
 .button {
-    display: block;
+    position: relative;
+    top: 0px;
+    display: inline-block;
     cursor: pointer;
     text-decoration: none;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 900;
-    width: 310px;
+    padding: 20px 10px 20px 40px;
+    z-index: 3px;
 }
 
 
@@ -526,8 +529,6 @@ body {
     color: #000;
     background-color: #7acbc6;
     border: 1px solid #7acbc6;
-    padding: 20px 8px 20px 38px;
-    margin-bottom: -48px;
 }
 
 .button::after {
@@ -538,7 +539,7 @@ body {
     background-size: cover;
     width: 30px;
     height: 30px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 5px;
     vertical-align: middle;
     transition: all 0.28s;
 }
@@ -554,59 +555,49 @@ body {
     transition: all 0.28s;
     color: #7acbc6;
     background-image: url('../img/main/sidebar/arrow-right_blue.svg');
-    margin-left: 20px;
-    margin-right: -15px;
+    margin-left: 9px;
+    margin-right: -4px;
 }
 
 
-
-
-.content__style {
-    display: flex;
-    letter-spacing: 0px;
+.content__links-nav {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
     text-transform: capitalize;
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 35px;
-}
-
-.nav-links__link_style {
-    text-decoration: underline;
+    letter-spacing: 0px;
     color: #000;
+    margin-bottom: 30px;
 }
 
-.nav-links__link_style:hover{
-    transition: all 0.5s;
-    text-decoration: none;
-    color: #1869b9;
+.nav-links__color {
+    color: #000;
+    text-decoration: underline;
 }
-
-.nav-links__line_color {
-    width: 1px;
-    height: 17px;
+.nav-links__style {
     background-color: #000;
-    margin: 0 5px;
-}
-
-
-.content__margin-bottom {
-    margin-bottom: 50px;
+    margin: 0px 5px;
+    width: 1px;
+    vertical-align: middle;
 }
 
 .drive {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    display: inline-block;
     align-items: center;
     background-color: #7acbc6;
     color: #000;
-    padding: 25px;
-    width: 730px;
+    padding: 25px 20px;
+    width: 85%;
+    z-index: 3;
 }
 
 .drive__text {
-    font-size: 23px;
+    display: inline-block;
+    font-size: 20px;
     font-weight: 100;
     height: 0px;
+    margin-right: 0px;
 }
 
 .drive__weight {
@@ -614,68 +605,56 @@ body {
 }
 
 .drive__button {
-    padding: 8px 0px 8px 20px;
-    font-size: 13px;
-    width: 260px;
+    position: absolute;
+    display: inline-block;
+    padding: 5px 12px 5px 20px;
+    font-size: 10px;
     background-color: #050c1a;
     letter-spacing: 2px;
     color: #fff;
-    margin-right: -100px;
+    top: 20px;
+    right: -80px;
+    z-index: 3;
 }
 
 .drive__button::after {
     background-image: url('../img/main/sidebar/arrow-right_blue.svg');
 }
 
-.subscribe {
-    padding: 25px 25px;
-    background-color: #f2f3f5;
-}
-
-.subscribe__title {
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 20px;
-}
-
-.subscribe__text {
-    color: #000;
-    font-size: 30px;
-    margin-bottom: 35px;
-}
-
-.subscribe__button {
-    font-size: 17px;
-    color: #fff;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: 20px 10px 20px 40px;
-    letter-spacing: 3px;
-    margin-bottom: -50px;
-}
-
-.subscribe__button::after {
-    background-image: url('../img/main/sidebar/arrow-right_blue.svg');
-}
-
-.subscribe__button:hover {
-    color: #000;
-    background-color: #fff;
-}
-
-.subscribe__button:hover::after {
+.drive__button:hover {
     transition: all 0.28s;
-    background-image: url('../img/main/sidebar/arrow-right.svg');
-    margin-left: 18px;
-    margin-right: -15px;
 }
+
+.drive__button:hover::after {
+    transition: all 0.28s;
+    color: #7acbc6;
+    background-image: url('../img/main/sidebar/arrow-right_blue.svg');
+    margin-left: 9px;
+    margin-right: -4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .car {
     padding: 30px 0px;
+    /* display: none; */
 }
 
 .car__block {
@@ -1518,6 +1497,53 @@ body {
     .gears {
         display: none;
     }
+    .content__body {
+        flex-direction: column;
+        top: 80px;
+    }
+    .content__margin {
+        margin: 0;
+    }
+    .services {
+        left: 12px;
+        width: 95%;
+    }
+    .contact-us {
+        display: none;
+    }
+    .drive {
+        position: relative;
+        padding: 0px 0px 0px 10px;
+        height: 45px;
+        width: 230px;
+    }
+    .drive__text {
+        font-size: 9px;
+        position: absolute;
+        top: 10px;
+        margin: 0px;
+    }
+    .drive__button {
+        position: absolute;
+        font-weight: 700;
+        padding: 0px 0px 27px 12px;
+        font-size: 5px;
+        letter-spacing: 1px;
+        margin: 0px;
+        width: 50%;
+        height: 50%;
+        left: 200px;
+        top: 10px;
+        z-index: 50;
+    }
+    .drive__button::after {
+        background-image: url('../img/main/sidebar/arrow-right_blue.svg');
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        margin: 0px 0px 0px 5px;
+    }
+    
 }
 
 
