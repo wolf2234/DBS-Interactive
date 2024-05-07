@@ -1592,7 +1592,7 @@ content {
     .subscribe {
         padding: 25px 25px 0px 25px;
         background-color: #f2f3f5;
-        width: 85%;
+        width: 100%;
     }
     .subscribe__title {
         font-size: 15px;
@@ -1604,17 +1604,19 @@ content {
     }
     .subscribe__text {
         color: #000;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     .subscribe__button {
-        font-size: 10px;
+        font-size: 15px;
         color: #fff;
         background-color: #000;
         border: 1px solid #000;
         padding: 15px;
         letter-spacing: 3px;
         margin-bottom: -150px;
+        width: 100%;
+        text-align: center;
     }
     .articles {
         padding: 190px 0px 20px;
