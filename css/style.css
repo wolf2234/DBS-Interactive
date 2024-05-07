@@ -1566,6 +1566,8 @@ content {
     .drive {
         padding: 10px 10px 5px 10px;
         width: 80%;
+        max-width: 250px;
+        min-width: 200px;
     }
     .drive__text {
         font-size: 9px;
@@ -1579,6 +1581,8 @@ content {
         width: 42%;
         right: -55px;
         top: 10px;
+        max-width: 250px;
+        min-width: 80px;
     }
     .drive__button::after {
         background-image: url('../img/main/sidebar/arrow-right_blue.svg');
@@ -1593,6 +1597,8 @@ content {
         padding: 25px 25px 0px 25px;
         background-color: #f2f3f5;
         width: 100%;
+        max-width: 350px;
+        min-width: 300px;
     }
     .subscribe__title {
         font-size: 15px;
