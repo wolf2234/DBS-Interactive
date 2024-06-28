@@ -613,7 +613,6 @@ content {
 .drive__text {
     font-size: 20px;
     font-weight: 100;
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -632,7 +631,6 @@ content {
     color: #fff;
     z-index: 3;
     min-width: 230px;
-    border: 1px solid red;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
@@ -864,7 +862,6 @@ content {
     transform: rotateY(0deg);
     width: 35%;
     height: 100%;
-    border: 3px solid red;
     left: 230px;
     border-radius: 16% 0% 20% 10% / 8% 29% 43% 36%;
     animation-name: cardoor;
@@ -1464,6 +1461,28 @@ content {
     }
 }
 
+
+@media (max-width: 1250px) {
+    .drive {
+        padding: 15px 15px;
+        min-width: 500px;
+    }
+
+    .drive__text {
+        font-size: 17px;
+    }
+
+    .drive__button {
+        min-width: 210px;
+        font-size: 9px;
+        padding: 3px 8px 3px 15px;
+    }
+
+    .drive__button::after {
+        top: 0%;
+        left: 80%;
+    }
+}
 
 
 
