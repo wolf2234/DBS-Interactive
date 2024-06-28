@@ -633,15 +633,23 @@ content {
     z-index: 3;
     min-width: 230px;
     border: 1px solid red;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .drive__button::after {
-    display: inline-block;
+    position: absolute;
     content: "";
+    top: 5%;
+    left: 80%;
+    width: 30px;
+    height: 30px;
     background-image: url('../img/main/sidebar/arrow-right_blue.svg');
     background-repeat: no-repeat;
-    background-size: 22px 30px;
-    z-index: 53;
+    background-size: cover;
+    z-index: 5;
 }
 
 .drive__button:hover {
@@ -649,11 +657,10 @@ content {
 }
 
 .drive__button:hover::after {
+    left: 83%;
     transition: all 0.28s;
     color: #7acbc6;
     background-image: url('../img/main/sidebar/arrow-right_blue.svg');
-    margin-left: 9px;
-    margin-right: -4px;
 }
 
 
@@ -1411,6 +1418,7 @@ content {
     }
 }
 
+
 @media (max-width: 1200px) {
     .content__margin {
         margin: 0px 0px 0px 60px;
@@ -1456,8 +1464,10 @@ content {
     }
 }
 
-@media (max-width: 950px) {
 
+
+
+@media (max-width: 950px) {
     .content__margin {
         margin: 0px 0px 0px 35px;
     }
