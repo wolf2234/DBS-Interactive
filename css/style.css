@@ -1632,6 +1632,10 @@ content {
         max-width: 100%;
         min-width: 650px;
     }
+
+    .contact-us {
+        display: none;
+    }
 }
 
 @media (max-width: 950px) {
