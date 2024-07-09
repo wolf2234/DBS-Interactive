@@ -1804,10 +1804,6 @@ content {
         margin: 0;
     }
 
-    /* .content__text {
-        width: 100%;
-    } */
-
     .contact-us {
         display: none;
     }
@@ -1817,9 +1813,8 @@ content {
         margin-bottom: 50px;
     }
 
-
     .articles {
-        padding: 190px 0px 20px;
+        padding: 190px 0px 20px 20px;
     }
 
     .articles__item {
@@ -2158,5 +2153,9 @@ content {
 
     .drive__button:hover::after {
         left: 83.5%;
+    }
+
+    .articles {
+        padding: 190px 0px 20px 10px;
     }
 }
