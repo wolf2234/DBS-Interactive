@@ -1338,6 +1338,7 @@ content {
 }
 
 .rights__text {
+    line-height: 1.6;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -2257,6 +2258,40 @@ content {
 
     .locations__link::after {
         display: none;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+
+    .rights {
+        padding: 25px 0px;
+        justify-content: center;
+        flex-direction: column;
+        order: 2;
+    }
+
+    .rights__text {
+        width: 65%;
+        text-align: center;
+    }
+
+    .rights__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social {
+        width: 100%;
+        padding: 25px 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
+        order: 1;
+    }
+
+    .social__items {
+        justify-content: center;
     }
 }
 
