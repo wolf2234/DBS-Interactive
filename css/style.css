@@ -1394,7 +1394,7 @@ content {
     }
 
     .nav-links__line {
-        margin: 0 12px;
+        margin: 0 5px;
     }
 
     .title-big {
@@ -1491,7 +1491,7 @@ content {
     }
 
     .nav-links {
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: 3px;
         padding: 0px;
         flex-basis: auto;
@@ -1785,10 +1785,6 @@ content {
         font-size: 35px;
         line-height: 50px;
         width: 100%;
-    }
-
-    .nav-links {
-        font-size: 13px;
     }
 
     .gears {
