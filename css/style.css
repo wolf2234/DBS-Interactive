@@ -1392,6 +1392,7 @@ content {
     }
 
     .footer .logo {
+        width: 180px;
         flex-shrink: 0;
     }
 
@@ -1452,10 +1453,6 @@ content {
         width: 115px;
         height: 115px;
         margin-right: 25px;
-    }
-
-    .footer .logo {
-        flex-shrink: 0;
     }
 
     .footer__text {
@@ -1673,10 +1670,6 @@ content {
         font-size: 14px;
     }
 
-    .logo {
-        width: 145px;
-    }
-
     .heading {
         padding: 10px 0px 20px;
     }
@@ -1803,10 +1796,6 @@ content {
 
     .header__body {
         height: 60px;
-    }
-
-    .logo {
-        width: 150px;
     }
 
     .burger {
