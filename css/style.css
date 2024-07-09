@@ -1791,6 +1791,10 @@ content {
         display: none;
     }
 
+    .content {
+        padding: 0px;
+    }
+
     .content__body {
         flex-direction: column;
         top: 80px;
