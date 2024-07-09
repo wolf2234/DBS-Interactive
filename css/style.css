@@ -1327,8 +1327,6 @@ content {
 
     .contact-us {
         display: inline-block;
-        padding: 16px;
-        height: 125px;
     }
 
     .contact-us__title {
@@ -1449,6 +1447,27 @@ content {
         width: 60%;
         margin-right: 20px;
     } */
+
+    .contact-us__text {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .contact-us__button {
+        padding: 15px 10px 15px 15px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+
+    .button::after {
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 3px;
+        vertical-align: middle;
+        transition: all 0.28s;
+    }
+
 }
 
 @media (max-width: 950px) {
