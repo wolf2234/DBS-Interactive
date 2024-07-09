@@ -467,7 +467,8 @@ content {
     top: 100px;
     z-index: 3;
     right: 20px;
-    width: 120%;
+    width: 100%;
+    min-width: 260px;
 }
 
 .title {
@@ -1137,6 +1138,10 @@ content {
 }
 
 @media (max-width: 1250px) {
+    .articles {
+        padding: 300px 0px 50px 30px;
+    }
+
     .articles__items {
         row-gap: 20px;
         flex-direction: column;
@@ -1428,9 +1433,22 @@ content {
         min-width: 650px;
     }
 
-    .contact-us {
-        display: none;
+    .services {
+        width: 94%;
     }
+
+    .content__margin {
+        margin: 0px 0px 0px 50px;
+    }
+
+    .services__item {
+        padding: 20px 15px 10px;
+    }
+
+    /* .content__text {
+        width: 60%;
+        margin-right: 20px;
+    } */
 }
 
 @media (max-width: 950px) {
@@ -1766,6 +1784,9 @@ content {
         margin: 0;
     }
 
+    /* .content__text {
+        width: 100%;
+    } */
 
     .contact-us {
         display: none;
