@@ -1242,6 +1242,7 @@ content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 
 .navigation__items {
@@ -2231,6 +2232,31 @@ content {
     .navigation__item {
         padding: 20px 0px 20px 30px;
         border-bottom: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    .locations {
+        align-items: center;
+        padding: 40px 0px;
+    }
+
+    .locations__items {
+        padding-left: 2px;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        width: 35%;
+        min-width: 265px;
+    }
+
+    .locations__item:first-of-type {
+        padding-left: 19px;
+    }
+
+    .locations__item:nth-child(even) {
+        border-right: none;
+    }
+
+    .locations__link::after {
+        display: none;
     }
 }
 
