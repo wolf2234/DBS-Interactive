@@ -1432,11 +1432,12 @@ content {
     }
 
     .services {
-        width: 94%;
+        width: 100%;
+        padding: 0px 0px 0px 40px;
     }
 
     .content__margin {
-        margin: 0px 0px 0px 50px;
+        margin: 0px 0px 0px 0px;
     }
 
     .services__item {
@@ -1651,8 +1652,8 @@ content {
     }
 
     .services {
-        left: 12px;
-        width: 95%;
+        width: 100%;
+        padding: 0px 0px 0px 40px;
     }
 
     .title {
